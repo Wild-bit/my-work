@@ -1,0 +1,18 @@
+.font {
+    color: rgb(78, 74, 74);
+}
+
+.font1 {
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.block {
+    font-size: 15px;
+    font-weight: 550;
+    display: block;
+}
+
+.s {
+    margin-top: 20px;
+}

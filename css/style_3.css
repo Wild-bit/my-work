@@ -1,0 +1,64 @@
+.font {
+    color: rgb(78, 74, 74);
+
+}
+
+.font1 {
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.block {
+    font-size: 15px;
+    font-weight: 550;
+    display: block;
+}
+
+/* .s {
+    margin-top: 20px;
+} */
+
+.back {
+    background-color: rgb(90, 87, 87);
+    height: 50px;
+    /* display: block; */
+    /* float: left; */
+
+}
+
+.margin {
+    /* margin-left: 20px;  */
+    display: block;
+}
+
+.font-resume {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+    float: left;
+
+}
+
+.border {
+    border: solid 1px rgb(71, 70, 70);
+    border-top: none;
+    /* overflow: auto; */
+    height: 120px;
+    width: 100%;
+
+}
+
+/* .kk {
+    display: block;
+    margin-left: 130px;
+    float: left;
+} */
