@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏布局2</title>
+    <style>
+        #contain {
+            overflow: hidden;
+            border: 1px dashed red;
+            padding: 15px 20px;
+        }
+
+        #left {
+            float: left;
+            width: 120px;
+            border: 5px solid #ddd;
+        }
+
+        #right {
+            border: 5px solid #ddd;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contain">
+        <div id="left">左侧固定宽度</div>
+        <div id="right">右侧自适应.利用了block级别的元素盒子的宽度具有填满父容器，并随着父容器的宽度自适应的流动特性
+            <p>float+margin-left方案缺点</p>
+            <ul>
+                <li>父容器需要清除浮动</li>
+                <li>需要计算右侧盒子的margin-left</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>

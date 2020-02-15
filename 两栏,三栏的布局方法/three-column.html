@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三栏布局</title>
+    <style>
+        #contain {
+            border: 1px dashed red;
+            display: flex;
+            padding: 10px 20px;
+        }
+
+        #left {
+            flex: none;
+            width: 120px;
+            border: 5px solid #ddd;
+        }
+
+        #content {
+            flex: none;
+            width: 120px;
+            border: 5px solid #ddd;
+            margin-left: 20px;
+        }
+
+        #right {
+            flex: auto;
+            border: 5px solid #ddd;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contain">
+        <div id="left">左侧</div>
+        <div id="content">中间</div>
+        <div id="right">右侧</div>
+    </div>
+</body>
+
+</html>

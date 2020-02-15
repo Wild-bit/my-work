@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>layout</title>
+    <style>
+        .header {
+            background-color: rgb(53, 51, 51);
+            width: 100%;
+            height: 65px;
+        }
+
+        .header .content {
+            width: 960px;
+            height: 60px;
+            font-size: 20px;
+            margin: 0 auto;
+            /* border: 1px solid white; */
+        }
+
+        .header .content p {
+            color: white;
+            float: left;
+            margin-top: 15px;
+        }
+
+        .header .content ul {
+            display: block;
+            float: right;
+            margin-top: 0;
+        }
+
+        .header .content li {
+            list-style-type: none;
+            display: inline;
+            font-size: 12px;
+        }
+
+        .header .content li a {
+            color: white;
+        }
+
+        .header .content li a:hover {
+            color: blue;
+        }
+
+        .banner {
+            width: 100%;
+            height: 190px;
+            background-color: rgb(127, 194, 26);
+            display: block;
+            overflow: hidden;
+        }
+
+        .banner .box_all {
+            display: block;
+            /* border: 1px solid red; */
+            float: right;
+            margin-right: 300px;
+            margin-top: 150px;
+        }
+
+        .banner .box_all p {
+            display: inline;
+        }
+
+        .banner .box_all .box134 {
+            padding: 4px 6px;
+            background-color: rgb(211, 218, 211);
+            font-size: 12px;
+            border: solid 1px;
+        }
+
+        .banner .box_all .box2 {
+            padding: 4px 6px;
+            background-color: white;
+            font-size: 12px;
+            padding-top: 15px;
+            border: solid 1px;
+        }
+
+        .nav {
+            width: 960px;
+            /* border: 1px solid; */
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 10px;
+
+        }
+
+        .nav li {
+            float: left;
+            list-style-type: none;
+            width: 80px;
+            border: 1px solid gray;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+            background-color: rgb(211, 218, 211);
+        }
+
+        .nav .box {
+            /* float: left; */
+            list-style-type: none;
+            width: 80px;
+            border: 1px solid gray;
+            border-top-left-radius: 1em;
+            border-top-right-radius: 1em;
+            background-color: white;
+            border-bottom: none;
+        }
+
+        .nav ul {
+            padding-left: 0;
+            margin-top: 5px;
+        }
+
+        .nav li a {
+            display: inline-block;
+            text-decoration: none;
+            width: 100%;
+            line-height: 2.5;
+            color: black;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        hr {
+            margin-top: -5px;
+        }
+
+        .flex_box {
+            width: 960px;
+            display: flex;
+            margin: 0 auto;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .flex_box .box1 {
+            flex-basis: 350px;
+            border: 1px solid gray;
+        }
+
+        .flex_box .box2 {
+            flex-basis: 330px;
+            border: 1px solid gray;
+            margin-left: 10px;
+        }
+
+        .flex_box .box3 {
+            flex-basis: 250px;
+            border: 1px solid gray;
+            margin-left: 10px;
+        }
+
+        .flex_box .box4 {
+            flex-basis: 230px;
+            border: 1px solid gray;
+            margin-top: 10px;
+        }
+
+        .flex_box .box567 {
+            flex-basis: 230px;
+            border: 1px solid gray;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .flex_box .box8 {
+            flex-basis: 310px;
+            border: 1px solid gray;
+            margin-top: 10px;
+        }
+
+        .flex_box .box910 {
+            flex-basis: 310px;
+            border: 1px solid gray;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .flex_box p {
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="content">
+            <p>Logo</p>
+            <ul>
+                <li><a href=""> Github</a></li>
+                <li><a href="">Register</a></li>
+                <li><a href=""> login</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="box_all">
+            <p class="box134">1</p>
+            <p class="box2">2</p>
+            <p class="box134">3</p>
+            <p class="box134">4</p>
+        </div>
+    </div>
+    <div class="nav">
+        <ul>
+            <li class="box"><a href="">HOME</a></li>
+            <li><a href="">PROFILE</a></li>
+            <li><a href=""> ABOUT</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="flex_box">
+        <div class="box1">
+            <p>this is content 1</p>
+        </div>
+        <div class="box2">
+            <p>this is content 2</p>
+        </div>
+        <div class="box3">
+            <p>content 3</p>
+        </div>
+        <div class="box4">
+            <p>content 4</p>
+        </div>
+        <div class="box567">
+            <p>content 5</p>
+        </div>
+        <div class="box567">
+            <p>content 6</p>
+        </div>
+        <div class="box567">
+            <p>content 7</p>
+        </div>
+        <div class="box8">
+            <p>content 8</p>
+        </div>
+        <div class="box910">
+            <p>content 9</p>
+        </div>
+        <div class="box910">
+            <p>content 10</p>
+        </div>
+    </div>
+</body>
+
+</html>

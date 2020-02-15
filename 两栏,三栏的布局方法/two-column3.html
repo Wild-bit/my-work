@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>两栏布局3</title>
+    <style>
+        #contain {
+            border: 1px dashed red;
+            padding: 15px 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #left {
+            flex: auto;
+            border: 5px solid #ddd;
+            margin-right: 20px;
+        }
+
+        #right {
+            border: 5px solid #ddd;
+            width: 120px;
+            flex: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contain">
+        <div id="left">左侧固定
+            <h4>flex方案</h4>
+            <p>需要注意的是，flex容器的一个默认属性值:align-items: stretch;。这个属性导致了列等高的效果。
+                为了让两个盒子高度自动，需要设置: align-items: flex-start;</p>
+        </div>
+        <div id="right">右侧自适应
+        </div>
+    </div>
+</body>
+
+</html>
