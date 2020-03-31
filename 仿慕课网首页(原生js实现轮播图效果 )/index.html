@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>慕课网</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 导航部分 -->
+<div class="header_bgImg">
+    <div class="nav">
+        <div class="logo">
+            <img src="./img/uiz1.png" alt="首页">
+        </div>
+        <div class="nav_meu">
+            <ul>
+                <li><a href="">实战</a></li>
+                <li><a href="">路劲</a></li>
+                <li><a href="">实战</a></li>
+                <li><a href="">猿问</a></li>
+                <li><a href="">手记</a></li>
+            </ul>
+        </div>
+        <div class="search_warp">
+            <div class="search_area">
+                <input type="text" value="前端小白   Java入门">
+                <div class="search_icon">
+                   <a href="#"><img src="./img/uiz4.png" alt="搜索图标"></a> 
+                </div>
+            </div>
+            <ul>
+                <li><a href="">登录</a></li>
+                <li><a href="">注册</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+       
+<div class="main">
+     <!--轮播图-->
+    <div id="banner_container">
+        <div id="banner_list"style="left:-1350px">
+            <!-- <img src="./img/uiz23.jpg" alt="23"> -->
+            <img src="./img/uiz23.jpg" alt="23">
+            <img src="./img/uiz21.jpg" alt="21">
+            <img src="./img/uiz22.jpg" alt="22">
+            <img src="./img/uiz23.jpg" alt="23">
+            <img src="./img/uiz21.jpg" alt="21">
+        </div>
+            <!-- 箭头按钮 -->
+        <a href="javascript:;" id="prev" class="arrow">&lt;</a><!--left--> 
+        <a href="javascript:;" id="next" class="arrow">&gt;</a><!--right-->     
+        <!-- 菜单栏 -->
+        <div class="meu_container">
+            <div class="item_box"data-name="frontDev">
+               <a href=""><span>前端开发</span>
+                <span class="l">&gt;</span>
+            </a> 
+            </div>
+            <div class="item_box" data-name="endDev">
+              <a href=""><span>后端开发 </span>
+                <span class="l">&gt;</span>
+            </a>  
+            </div> 
+            <div class="item_box" data-name="mobDev">
+                <a href=""><span>移动开发</span>
+                    <span class="l">&gt;</span>
+                </a> 
+            </div> 
+            <div class="item_box" data-name="database">
+               <a href=""><span>数据库</span>
+                <span class="l">&gt;</span>
+            </a>
+            </div> 
+            <div class="item_box" data-name="cloundCal">
+               <a href=""><span>云计算&大数据 </span>
+                <span class="l">&gt;</span>
+            </a> 
+            </div> 
+            <div class="item_box" data-name="test">
+               <a href=""><span>运维和测试 </span>
+                <span class="l">&gt;</span>
+            </a> 
+            </div> 
+            <div class="item_box" data-name="design">
+               <a href=""><span>UI设计</span>
+                <span class="l">&gt;</span>
+            </a> 
+            </div>
+        </div>
+        <div class="hidden_meu" data-name="frontDev">
+            <img src="./img/be.png">
+        </div> 
+        <div class="hidden_meu" data-name="endDev">
+            <img src="./img/bigdataBg.png" >
+        </div>
+        <div class="hidden_meu">
+            <img src="./img/data.png" data-name="mobDev">
+        </div>
+        <div class="hidden_meu" data-name="database">
+            <img src="./img/fe.png">
+        </div>
+        <div class="hidden_meu" data-name="cloundCal" >
+            <img src="./img/mobileBg.png">
+        </div>
+        <div class="hidden_meu" data-name="test" >
+            <img src="./img/photo.png">
+        </div>
+        <div class="hidden_meu" data-name="design">
+            <img src="./img/textBg.png">
+        </div>
+    </div>
+    <div class="path_list">
+        <a href="#"><img src="./img/path_1.png"></a>
+        <a href="#"><img src="./img/path_2.png"></a>
+        <a href="#"><img src="./img/path_3.png"></a>
+        <a href="#"><img src="./img/path_4.png"></a>
+        <a href="#"><img src="./img/path_5.png"></a>
+    </div>
+    <div class="icon">
+        <div class="weiBo" onmouseover="this.className = 'weiBo on';" onmouseout="this.className = 'weiBo';">
+             <a href="javascript:;" class="weiBo"></a>
+        </div>
+       
+        <div class="weiXin" onmouseover="this.className = 'weiXin on';" onmouseout="this.className = 'weiXin';">
+            <a href="javascript:;" ></a>
+            <div class="weiXin_nr"></div>
+        </div>
+        <div class="ye" onmouseover="this.className = 'ye on';" onmouseout="this.className = 'ye';">
+            <a href="javascript:;" ></a>
+        </div>
+        <div class="qq" onmouseover="this.className = 'qq on';" onmouseout="this.className = 'qq';">
+            <a href="javascript:;"></a>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+           <li><a href="">关于我们</a></li> 
+           <li><a href="">企业合作</a></li> 
+           <li><a href="">人才招聘</a></li> 
+           <li><a href="">讲师招聘</a> </li>
+           <li><a href="">联系我们</a> </li>
+           <li><a href="">意见反馈</a> </li>
+           <li><a href="">友情链接</a> </li>
+        </ul>
+    </div>
+</div>
+<script src="./banner.js"></script>
+</body>
+</html>
